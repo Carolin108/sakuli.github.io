@@ -1,9 +1,41 @@
 <!-- Header -->
 {{ partial "header.html" . }}
 {{ $priceList := .Site.Data.enterprise.price_table }}
+<h1>Let´s have a try...</h1>
+<article class="shrink-content text-center">
+    <div class="box-layout">
+        <div class="row">
+            <div class="column">
+                <img src="/images/enterprise/demo.png" />
+                <a class="button" href="click" target="_blank">Request a Demo</a>
+            </div>
+            <div class="column">
+                Wheather you want a guided Demo by one of our core-developers or a demo license for one of our
+                enterprise features to have a peak - just let us know and describe your need in the message field. We
+                are happy to help!
+            </div>
+        </div>
+    </div>
+</article>
 <h1>Workshops</h1>
 <article class="shrink-content text-center">
-    {{.Content}}
+    <div class="box-layout">
+        <div class="row">
+            <div class="column">
+                If you need to jumpstart your Sakuli engagement, want to learn Best-Practices and enable your Testing
+                Team, our
+                Workshops are the perfect choice. We offer remote and on-site Workshops for every entry-level of
+                UI-Testing by our
+                experts. Learn to use Sakuli, to integrate your tests into CI/CD pipelines, connect your monitoring
+                systems and set up
+                and configure docker container for automated and parallel execution.
+            </div>
+            <div class="column">
+                <img src="/images/enterprise/brain3.png" />
+                <a class="button" href="click" target="_blank">Send us your WS request</a>
+            </div>
+        </div>
+    </div>
 </article>
 <h1>{{.Title}}</h1>
 <article class="shrink-content text-center">
@@ -103,7 +135,8 @@
     </li>
     {{end}}
 </ul>
-<div class="information-layout">
+
+<div class="fine-print-layout">
     <div class="row">
         {{if isset $priceList "MaintenanceDescription"}}
         <div class="column">

@@ -121,15 +121,16 @@
 
 
 
-.information-layout {
-    font-size: .7em;
+.fine-print-layout {
+    font-size: .65em;
+    text-align: justify;
     .row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
     }
-        .column {
+    .column {
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
@@ -140,7 +141,28 @@
         }
     }
 }
-
+.box-layout {
+        text-align: justify;
+    .button{
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    @media screen and (min-width: 820px) {
+        .column {
+            flex: 1
+        }
+    }
+}
 
 #enterprise-contact-form {
     display: flex;

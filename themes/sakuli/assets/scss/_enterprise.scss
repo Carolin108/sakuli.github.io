@@ -118,29 +118,6 @@
     margin-bottom: 4rem;
 }
 
-
-
-
-.fine-print-layout {
-    font-size: .65em;
-    text-align: justify;
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .column {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-    }
-    @media screen and (min-width: 820px) {
-        .column {
-            flex: 1
-        }
-    }
-}
 .box-layout {
         text-align: justify;
     .button{

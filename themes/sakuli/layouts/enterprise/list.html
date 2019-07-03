@@ -2,7 +2,7 @@
 {{ partial "header.html" . }}
 {{ $priceList := .Site.Data.enterprise.price_table }}
 
-{{ range .Sections}}   
+{{ range .Sections}}
     {{if eq .Title "offers"}}        
         {{ range .Pages}}
              <pre>JSON{{. | jsonify}}</pre>

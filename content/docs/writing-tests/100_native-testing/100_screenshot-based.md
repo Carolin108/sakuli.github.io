@@ -11,7 +11,7 @@ When creating a new instance without parameters, a `Region` spans over the whole
 But, it is also possible to create new regions by specifying `left`, `top`, `width` and `height` parameters.
 
 The following example showcases a test which drags a source element to a target region.
-In this demo scenario, both source and target are both located on screen via template image
+In this demo scenario, both source and target are both located on screen via template image.
 
 {{< highlight typescript "linenos=table" >}}
 (async () => {
